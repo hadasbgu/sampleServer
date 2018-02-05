@@ -4,6 +4,7 @@ var app = express();
 
 var connection = mysql.createConnection({
 // properties...
+	// connnectionLimit: 50,
     host: 'localhost',
     user: 'root',
     password: '123456',//'123456'
@@ -26,9 +27,12 @@ app.get('/',function(req,resp){
 		// callback function
 		if(error){
 		console.log('Error in query');
-	} else {
-		console.log('Successfull in query');
-	}
+		} else {
+			console.log('Success!\n');
+			console.log(rows);
+			resp.send("Hello, " + rows[1].name + " :-*");
+			// resp.json(rows);
+		}
 	});
 })
 
