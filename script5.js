@@ -1,8 +1,8 @@
-// NodeJS Tutorial 4: Creating Simple Server - Part 1
-// https://www.youtube.com/watch?v=Prl7tVSgZrY&index=5&list=PLYxzS__5yYQmHbpKMARP04F344zYRX91I
+// NodeJS Tutorial 5: Creating Simple Server - Part 2
 
 
-var server = require('http');
+var http = require('http');
+
 
 
 server.createServer(engine).listen(1337); // leets
