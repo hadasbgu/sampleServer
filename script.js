@@ -1,3 +1,7 @@
+// NodeJS + MySQL Database Connection Tutorial
+// codedamn
+// https://www.youtube.com/watch?v=hGZX_SA7lYg
+
 var express = require('express');
 var mysql = require('mysql');
 var app = express();
